@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel admina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard
+                    <span class="fas fa-columns first"></span></a>
+            </li>
+            <li>
+                <a href="#" class="calendar-btn">Calendar
+                    <!--<span class="fas fa-caret-down first"></span></a>-->
+                    <span class="far fa-calendar second"></span></a>
+                <ul class="calendar-show">
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="users-btn">Users
+                    <!--<span class="fas fa-caret-down second"></span></a>-->
+                    <span class="far fa-user third"></span></a>
+                <ul class="users-show">
+                    <li><a href="#">List of users</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="forms-btn">Forms
+                    <span class="far fa-check-square fourth"></span></a>
+            </li>
+            <li><a href="#" class="charts-btn">Charts
+                    <span class="far fa-chart-bar fifth"></span></a>
+            </li>
+            <li><a href="#" class="tables-btn">Tables
+                    <span class="fas fa-table sixth"></span></a>
+            </li>
+            <li><a href="#" class="sample-btn">Sample Pages
+                    <!--<span class="fas fa-caret-down third"></span></a>-->
+                    <span class="far fa-file seventh"></span></a>
+                <ul class="sample-show">
+                    <li><a href="http://larussa.lokopernik.pl/">Login/Sign up</a></li>
+                    <li><a href="#">404 error</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <ul class="navigation">
+        <li><i class="far fa-envelope"></i></li>
+        <li><i class="far fa-bell"></i></li>
+        <li><i class="far fa-user"></i></li>
+    </ul>
+
+    <div class="boxes">
+
+        <div class="first box">
+            Total number of visits
+            <p>12,345</p>
+        </div>
+        <div class="second box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="third box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="fourth box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+
+    </div>
+
+    <div class="boxes">
+
+        <div class="first box">
+            Total number of visits
+            <p>12,345</p>
+        </div>
+        <div class="second box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="third box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="fourth box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+
+    </div>
+
+    <div class="boxes">
+
+        <div class="first box">
+            Total number of visits
+            <p>12,345</p>
+        </div>
+        <div class="second box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="third box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+        <div class="fourth box">
+            Total number of posts
+            <p>34,000</p>
+        </div>
+
+    </div>
+
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.calendar-btn').click(function () {
+            $('nav ul .calendar-show').toggleClass("show");
+            //$('nav ul .first').toggleClass("rotate");
+        });
+        $('.users-btn').click(function () {
+            $('nav ul .users-show').toggleClass("show1");
+            //$('nav ul .second').toggleClass("rotate");
+        });
+        $('.forms-btn').click(function () {
+            $('nav ul .forms-show').toggleClass("show2");
+            //$('nav ul .third').toggleClass("rotate");
+        });
+        $('.charts-btn').click(function () {
+            $('nav ul .charts-show').toggleClass("show3");
+        });
+        $('.tables-btn').click(function () {
+            $('nav ul .tables-show').toggleClass("show4");
+        });
+        $('.sample-btn').click(function () {
+            $('nav ul .sample-show').toggleClass("show5");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+        
+    </script>
+
+</body>
+
+</html>
